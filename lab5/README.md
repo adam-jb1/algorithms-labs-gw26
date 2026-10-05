@@ -97,9 +97,9 @@ have a different height, creating imbalances higher up.
 ### 1.1 Short answer: BST deletion reminder
 
 **TODO 1.1:** Briefly recall the three deletion cases from Lab 3/4:
-- What happens when the target node has 0 children?
-- What happens when the target node has 1 child?
-- What happens when the target node has 2 children, and why is the in-order successor used?
+- What happens when the target node has 0 children? Just delete the node then.
+- What happens when the target node has 1 child? delete the node and connect its parent to the child. So, now the parent of the deleted node is the parent of the child of grandchild.
+- What happens when the target node has 2 children, and why is the in-order successor used? The right child becomes the parent of the left child and the target node is deleated. In-order successor is used to keep the characteristics of the BST.
 
 ### 1.2 Short answer: Height change after deletion
 
